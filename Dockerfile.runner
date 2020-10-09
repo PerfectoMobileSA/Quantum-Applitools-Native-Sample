@@ -1,0 +1,5 @@
+FROM perfectops/quantum-starter-kit:0.1
+
+ARG skipTests
+
+RUN mvn clean install -DskipTests=${skipTests}
